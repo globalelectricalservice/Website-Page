@@ -73,7 +73,14 @@
                 font-size: 1rem;
             }
         }
-        
+        @media (max-width: 576px) {
+            .service-card img {
+                height: 200px; /* Set to 200px height for mobile view */
+                width: auto;  /* Let the width adjust automatically */
+                margin: 0 auto; /* Center the image in the card */
+                display: block;
+            }
+        }
         
     </style>
 </head>
