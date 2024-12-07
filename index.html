@@ -44,39 +44,68 @@
             background-color: #e2e6ea;
             color: #0056b3;
         }
+        .service-card {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .service-card img {
+            width: 100%;
+        
+            height: 350px;
+        }
+        .service-card-body {
+            padding: 20px;
+        }
+        .service-card-body h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .service-card-body p {
+            font-size: 1rem;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            .hero-section p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
 <!-- Header Section -->
 <header class="bg-light py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-        <!-- Logo (Top Left) -->
-        <div>
-            <img src="images/logo.png" alt="Logo" class="img-fluid" height="150px" width="150px">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Logo (Top Left) -->
+            <a href="#" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo" class="img-fluid" height="150" width="150">
+            </a>
+            <!-- Navigation Menu (Top Right) -->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <!-- Navigation Menu (Top Right) -->
-        <nav>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Request a Quote (CTA button) -->
-        
     </div>
 </header>
 
@@ -84,13 +113,132 @@
 <section class="hero-section">
     <div class="container">
         <h1>Reliable Electrical Services You Can Trust</h1>
-        <p>Experienced electricians for all your residential and commercial</p>
+        <p>Experienced electricians for all your residential and commercial needs.</p>
         <div class="d-flex justify-content-center">
-            
+            <!-- Call Us Button -->
             <a href="tel:+916362891350" class="btn btn-secondary">Call Us Today: +91-6362891350</a>
         </div>
     </div>
 </section>
+<div id="services">
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Electrical Services</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+            <!-- Service 1 Card -->
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/LED light installation.jpg" alt="LED Light Installation & Upgrade" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">LED Light Installation & Upgrade</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/Fan installation.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Fan Installation</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/Geysor installation and Repair.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Geysor Installation & Repair</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/MCB repair.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Electrical Panel Issue</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/switch box installation.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Switch Box Installation & Repair</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/UPS installation.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">UPS Intallation & Repair</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/Wiring and replacement.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">New Wiring & Inspecting</h5>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/Fridge Installation.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Fridge Installation</h5>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/Fuse Replacement.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Fuse Replacement</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/TV installation.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">TV Installation</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <img src="images/washing machine installation.jpg" alt="Fan Installation" class="card-img-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Washing Machine Installation</h5>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <!-- Bootstrap JS (Optional) -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybRJsV4L8pOqu4g5fZr5gm5dOnF9t0hDlqWeJwKNqU5ShgDkz" crossorigin="anonymous"></script>
