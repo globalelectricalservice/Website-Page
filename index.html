@@ -65,6 +65,84 @@
             font-size: 1rem;
             color: #555;
         }
+        .about-us-section {
+            background-image: url(images/about\ us\ bg.jpg); /* Set your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            color: #fff; /* Set text color to white to stand out against dark backgrounds */
+        }
+
+        .about-us-content {
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+            align-items: center;
+            height: 100%; /* Make the section full height */
+        }
+
+        .about-us-card {
+            background-color: rgba(0, 0, 0, 0.6); /* Add a dark overlay behind text */
+            border-radius: 8px;
+            padding: 30px;
+            width: 100%; /* Full width on smaller screens */
+            max-width: 600px; /* Limit the width */
+        }
+
+        .about-us-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .about-us-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-carousel .carousel-item {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .testimonial-carousel .carousel-item img {
+            border-radius: 25px;
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-carousel .carousel-item blockquote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .testimonial-carousel .carousel-item h5 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .testimonial-carousel .carousel-item p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000;
+        }
+
+        @media (max-width: 767px) {
+            .about-us-title {
+                font-size: 1.75rem;
+            }
+
+            .about-us-description {
+                font-size: 1rem;
+            }
+        }
         @media (max-width: 768px) {
             .hero-section h1 {
                 font-size: 2.5rem;
@@ -101,11 +179,12 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#aboutus">About Us</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
@@ -129,6 +208,29 @@
         </div>
     </div>
 </section>
+
+<!--About Us-->
+
+<div id="aboutus">
+    <section class="container-fluid about-us-section">
+        <div class="row about-us-content">
+            <!-- About Us Text Content (Aligned to the right) -->
+            <div class="col-md-6">
+                <div class="about-us-card">
+                    <h2 class="about-us-title">About Global Electrical Service</h2>
+                    <p class="about-us-description">
+                        Global Electrical Service is a trusted provider of comprehensive electrical services for residential, commercial, and industrial clients. Our expert team of licensed electricians is dedicated to delivering safe, efficient, and reliable electrical solutions, including installations, repairs, maintenance, and troubleshooting. Whether it's upgrading your home’s electrical system, designing and implementing energy-efficient lighting, we have you covered.
+                    </p>
+                    <p class="about-us-description">
+                        We specialize in a wide range of services, including circuit installations, lighting design and installation, and troubleshooting. Our commitment to customer satisfaction, timely service, and transparent pricing sets us apart, ensuring that our clients can trust us for all their electrical needs. At Global Electrical Service, we prioritize safety, quality, and innovation in every project we undertake.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Services Section-->
 <div id="services">
 
     <section class="container my-5">
@@ -257,6 +359,91 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+</div>
+
+<div id="testimonials">
+    <section class="container my-5">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+
+            </div>
+    
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <!-- Testimonial 1 -->
+                
+
+                <div class="carousel-item active">
+                    <img src="images/Testimonial 2.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Testimonial 3.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Testimonial 4.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+
+                
+
+                
+
+                <div class="carousel-item">
+                    <img src="images/Testimonial 6.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Testimonial 7.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Testimonial 8.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Testimonial 9.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+
+                
+                <div class="carousel-item">
+                    <img src="images/Testimonial 11.jpeg" alt="Client 1" class="img-fluid">
+                    
+                </div>
+    
+                
+    
+                
+            </div>
+    
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 </div>
