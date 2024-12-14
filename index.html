@@ -34,6 +34,9 @@
             background-color: #007bff;
             border-color: #007bff;
         }
+        .dropdown:hover>.dropdown-menu {
+        display: block;
+        }
         .btn-primary:hover {
             background-color: #0056b3;
             border-color: #0056b3;
@@ -67,6 +70,10 @@
         .service-card-body p {
             font-size: 1rem;
             color: #555;
+        }
+        .service-card a
+        {
+            text-decoration: none;
         }
         .about-us-section {
             background-image: url(images/about\ us\ bg.jpg); /* Set your background image */
@@ -233,7 +240,27 @@
                     <a class="nav-link" href="#aboutus">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../Website-Page/Electrical Installation.html">Electrical Installation Services</a></li>
+                            <li><a class="dropdown-item" href="#">Interior Works</a></li>
+                            <li><a class="dropdown-item" href="#">LED Light Installation & Upgrade</a></li>
+                            <li><a class="dropdown-item" href="#">Fan Installation </a></li>
+                            <li><a class="dropdown-item" href="#">Geysor Installation & Repair</a></li>
+                            <li><a class="dropdown-item" href="#">Electrical Panel Issue</a></li>
+                            <li><a class="dropdown-item" href="#">Switch Box Installation & Repair</a></li>
+                            <li><a class="dropdown-item" href="#">UPS Intallation & Repair</a></li>
+                            <li><a class="dropdown-item" href="#">New Wiring & Inspecting</a></li>
+                            <li><a class="dropdown-item" href="#">Fuse Replacement</a></li>
+                            <li><a class="dropdown-item" href="#">TV Intallation </a></li>
+                            <li><a class="dropdown-item" href="#">Washing Machine</a></li>
+                            </ul>
+                        </div>
+                    
                 </li>
                 
                 <li class="nav-item">
@@ -258,7 +285,7 @@
             <a href="https://wa.me/6362891350" target="_blank" title="WhatsApp">
                 <img src="images/icons8-whatsapp-48.png" style="font-size: 30px; color: #25D366;"></i>
             </a>
-            <a href="tel:+916362891350" class="btn btn-secondary mx-4" >Call Us Today: +91-6362891350</a>
+            <a href="tel:+916362891350" class="btn btn-secondary mx-4" >Call Today: +91-6362891350</a>
             
         </div>
     </div>
@@ -295,11 +322,13 @@
             <!-- Service 1 Card -->
             <div class="col">
                 <div class="card service-card">
-                    <img src="images/Electrical Installation.jpg" alt="LED Light Installation & Upgrade" class="card-img-top">
-                    <div class="card-body service-card-body">
-                        <h5 class="card-title">Electrical Installation Service</h5>
-                       
-                    </div>
+                    <a href="../Website-Page/Electrical Installation.html">
+                        <img src="images/Electrical Installation.jpg" alt="LED Light Installation & Upgrade" class="card-img-top">
+                        <div class="card-body service-card-body">
+                            <h5 class="card-title">Electrical Installation Service</h5>
+                        
+                        </div>
+                    </a>
                 </div>
             </div>
 
